@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title> ascii_chan </title>
+  </head>
+  
+  <style type="text/css">
+    body {
+        font-family: sans-serif; width: 800px; margin: 0 auto; padding: 10px;
+    }
+    .error {
+        color: red;
+    }
+    label {
+        display: block; font-size: 20px;
+    }
+    input[type=text] {
+        width: 400px; font-size: 20px; padding: 2px;
+    }
+    textarea {
+        width: 800px; height: 400px; font-size: 17px; font-family: monospace;
+    }
+    input[type=submit] {
+        font-size: 24px;
+    }
+    hr {
+        margin: 20px auto;
+    }
+
+    .art + .art {
+        margin-top: 20px;
+    }
+    .art-title {
+        font-weight: bold; font-size: 20px;
+    }
+    .art-body {
+        margin: 0; font-size: 17px;
+    }
+  </style>
+
+
+  <body>
+    <p>
+      <h1> ascii chan </h1>
+    </p>
+    <hr><hr>
+    
+    {% for art in arts %}
+    <div class="art">
+      <div class="art-title">
+	<a href="/asciichan/{{art.key().id()}}">{{art.title}}</a>
+      </div>
+      <br>
+      <pre class="art-body"><em>{{art.created}}</em></pre>
+      <br>
+      <pre class="art-body">{{art.art[:140]}}</pre>
+    </div>
+    <hr>
+    {% endfor %}
+       
+    <hr>
+    <a href="/submit">I want to submit!</a>
+    <hr>
+    <form action="/asciichan" method="post">
+      <input type="checkbox" name="clear"> clear the db?
+      <input type="submit">
+    </form>
+
+  </body>
+</html>

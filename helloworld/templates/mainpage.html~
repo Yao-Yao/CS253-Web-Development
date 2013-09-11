@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> mainpage </title>
+  </head>
+  <body>
+    <p>
+      go to <a href="/calculate"> calculate </a>
+    </p>
+    <p>
+      go to <a href="/rot13"> rot13 </a>
+    </p>
+    <p>
+      go to <a href="/user login"> user login </a>
+    </p>
+    <p>
+      go to <a href="/asciichan"> ascii chan </a>
+    </p>
+  </body>
+</html>

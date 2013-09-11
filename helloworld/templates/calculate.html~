@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title> calculate </title>
+  </head>
+  <body>
+    <p>
+      <h1>Please enter calculation expression.</h1>
+      (What is <a href="http://en.wikipedia.org/wiki/Calculation">calculation</a>)
+    </p>
+    <p>
+      example: input "2+2" in the box, then press "Calculate"
+    </p>
+    <form action="/calculate" method="post">
+      <div><textarea name="content" rows="3" cols="60"></textarea></div>
+      <div><input type="submit" value="Calculate"></div>
+    </form>
+  </body>
+</html>

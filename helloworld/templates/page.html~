@@ -1,0 +1,15 @@
+<html>
+	<body>
+		<p>
+		Please enter calculation expression.
+		(What is <a href="http://en.wikipedia.org/wiki/Calculation">calculation</a>)
+		</p>
+		<p>
+		example: input "2+2" in the box, then press "Calculate"
+		</p>
+		<form action="/sign" method="post">
+			<div><textarea name="content" rows="3" cols="60"></textarea></div>
+			<div><input type="submit" value="Calculate"></div>
+		</form>
+	</body>
+</html>
