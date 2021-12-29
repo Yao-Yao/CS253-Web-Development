@@ -1,4 +1,4 @@
 CS253-Web-Development
 =====================
-
-My webapp addr: http://yaoyaohust2.appspot.com/
+course page: https://www.udacity.com/wiki/cs253  
+my webapp addr: http://yaoyaohust2.appspot.com/  
