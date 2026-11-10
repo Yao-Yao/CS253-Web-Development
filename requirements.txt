@@ -1,0 +1,6 @@
+# CS253 Web Development — Python 依赖
+# 仅列出第三方 PyPI 包；标准库（os / re / cgi / sqlite3 / codecs ...）不列入
+# google.appengine 来自 Google App Engine SDK / gcloud components install app-engine-python，不在 PyPI 上
+
+webapp2
+Jinja2

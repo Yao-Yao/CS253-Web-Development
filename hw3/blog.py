@@ -1,6 +1,7 @@
 import os
 import re
-from string import letters
+import codecs
+from string import ascii_letters as letters
 
 import webapp2
 import jinja2
@@ -91,7 +92,7 @@ class Rot13(BlogHandler):
         rot13 = ''
         text = self.request.get('text')
         if text:
-            rot13 = text.encode('rot13')
+            rot13 = codecs.encode(text, 'rot_13')
 
         self.render('rot13-form.html', text = rot13)
 

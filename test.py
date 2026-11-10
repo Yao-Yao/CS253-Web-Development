@@ -136,5 +136,5 @@ def link_by_id(link_id):
 
 #print query()
 #print build_link_index()[2]
-print link_by_id(2)    
+print(link_by_id(2))    
 
